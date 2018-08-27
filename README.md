@@ -1,4 +1,4 @@
-# Tomochain Name Service
+![Tomochain Name Service](./assets/title.png)
 
 > 📖🔍 Documents of the Tomochain Name Service.
 
