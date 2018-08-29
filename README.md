@@ -2,7 +2,7 @@
 
 > 📖🔍 Documents of the Tomochain Name Service.
 
-## What is BNS?
+## 💡 What is BNS?
 BNS – or blockchain name system – is the protocol on the internet that turns human-comprehensible decentralized website names such as ‘website.perl’ or ‘mywebsite.eth’ into addresses understandable by decentralized network machines.
 
 ## 📝 Description
