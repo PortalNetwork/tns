@@ -1,13 +1,16 @@
-![Tomochain Name Service](./assets/title.jpg)
+![TomoChain Name Service](./assets/title.jpg)
 
-> 📖🔍 Documents of the Tomochain Name Service.
+> 📖🔍 Documents of the TomoChain Name Service.
+
+## 💡 What is TomoChain?
+TomoChain is a public blockchain for dApps. It also issues a cryptocurrency. It is part of the new wave called the Internet of Value, which includes an alternative financial system. It is highly scalable. TomoChain is transparent and can be easily audited. It’s easy to integrate tokens. 
 
 ## 💡 What is BNS?
 BNS – or blockchain name system – is the protocol on the internet that turns human-comprehensible decentralized website names such as ‘website.perl’ or ‘mywebsite.eth’ into addresses understandable by decentralized network machines.
 
 ## 📝 Description
 
-TNS is the Tomochain Name Service, a distributed, open, and extensible naming system based on the Tomochain blockchain.
+TNS is the TomoChain Name Service, a distributed, open, and extensible naming system based on the TomoChain blockchain.
 
 ## 📚 Documents
 
