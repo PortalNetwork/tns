@@ -28,7 +28,10 @@ TNS is the TomoChain Name Service, a distributed, open, and extensible naming sy
 
 ## TNS smart contract test coverage
 __Continuous updating__
-- [Coverage Report](./tns/coverage/index.html)
+- [Coverage Report](./tns/coverage/)
+
+![Coverage](./assets/coverage.png)
+
 ```
 Launched testrpc on port 8555
 Running: truffle test
