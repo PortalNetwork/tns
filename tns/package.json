@@ -25,5 +25,8 @@
     "eth-ens-namehash": "^2.0.8",
     "truffle": "^4.1.14",
     "web3": "^0.20.2"
+  },
+  "devDependencies": {
+    "solidity-coverage": "^0.5.11"
   }
 }
