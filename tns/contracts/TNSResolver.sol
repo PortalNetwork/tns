@@ -80,7 +80,8 @@ contract TNSResolver {
      * Sets the multihash associated with an ENS node.
      * May only be called by the owner of that node in the ENS registry.
      * @param node The node to update.
-     * @param hash The multihash to set
+     * @param key The key to set.
+     * @param hash The multihash to set.
      */
     function setMultihash(bytes32 node, string key, bytes hash) public only_owner(node) {
         records[node].multihash[key] = hash;
@@ -143,6 +144,7 @@ contract TNSResolver {
     /**
      * Returns the multihash associated with an ENS node.
      * @param node The ENS node to query.
+     * @param key The multihash data key to query.
      * @return The associated multihash.
      */
     function multihash(bytes32 node, string key) public view returns (bytes) {

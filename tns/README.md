@@ -22,12 +22,12 @@ Testing with `truffle`
 truffle test
 ```
 
-## QCNSRegistry.sol
-Implementation of the QCNS registry, the central contract used to look up resolvers and owners for domains.
+## TNSRegistry.sol
+Implementation of the TNS registry, the central contract used to look up resolvers and owners for domains.
 
-## QCNSRegistrar.sol
-Implementation of the QCNS registrar, which issues (sub-)domains to the first account to request them.
+## TNSRegistrar.sol
+Implementation of the TNS registrar, which issues (sub-)domains to the first account to request them.
 
-## QCNSResolver.sol
-Implementation of the QCNS resolver that allows the owner of any domain to configure how its name should resolve.
+## TNSResolver.sol
+Implementation of the TNS resolver that allows the owner of any domain to configure how its name should resolve.
 
