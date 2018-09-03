@@ -1,5 +1,9 @@
 # Chagnelog
 
+## 2018-09-03
+### Update
+- Updat TNS.test.js
+
 ## 2018-08-29
 ### Add
 - Using `truffle` for smart contract testing.
