@@ -1,6 +1,6 @@
 # TNS
 
-Implementations for smart contracts for the Quarkchain Name Service.
+Implementations for smart contracts for the TomoChain Name Service.
 
 ## Techincal Stack
 - Use `truffle` to create, compile, deploy and test smart contract.
