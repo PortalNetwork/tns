@@ -1,8 +1,12 @@
 # Chagnelog
 
+## 2018-09-13
+### Update
+- Deploy smart contract to TomoChain testnet
+
 ## 2018-09-03
 ### Update
-- Updat TNS.test.js
+- Update TNS.test.js
 
 ## 2018-08-29
 ### Add
