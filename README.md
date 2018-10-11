@@ -26,6 +26,7 @@ TNS is the TomoChain Name Service, a distributed, open, and extensible naming sy
 - [Smart Contract Testing](./tns/README.md)
 - [Smart Contract Design Principle](./docs/SMART_CONTRACT_DESIGN_PRINCIPLE.md)
 - [Smart Contract Deploy](./docs/TUTORIAL.md)
+- [TNS Deploy](./docs/Contract_deploy.md)
 
 ## ⚙️ TNS smart contract test coverage
 __Continuous updating__
