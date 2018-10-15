@@ -1,3 +1,5 @@
 tns/node_modules
 tns/build
 node_modules
+.DS_Store
+tns/.DS_Store
