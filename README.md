@@ -78,13 +78,21 @@ Done.
 
 ## TNS Deploy
 
+### TNS Contracts
+
+TNS Contract | Network    | Contract Address                           | Transaction Hash
+-------------|------------|--------------------------------------------|-----------------------------------------------
+Registry     | Testnet    | 0xdf9e5ce912412ab6af0dd46acff0ffc112bbe36e | [0x971c1ae1ccc10bf97bdebf24deb455362d847011d3cccb6fd517dd0e974ec490](https://scan.testnet.tomochain.com/txs/0x971c1ae1ccc10bf97bdebf24deb455362d847011d3cccb6fd517dd0e974ec490)
+Registrar    | Testnet    | 0xb4cc8deec867c8352ec8f86afc945590629ae260 | [0xdf41eb54713ba8c931ef9c64a677b55759ee874606f3bb51e9b0f52434e68014](https://scan.testnet.tomochain.com/txs/0xdf41eb54713ba8c931ef9c64a677b55759ee874606f3bb51e9b0f52434e68014)
+Resolver     | Testnet    | 0x89e77b691c8e3718b808015dbca094d35d7c37cc | [0xd66e858bbde4f95e30886c1d4d9dbaa76ea14d85628db4dcb50d087a8a86de22](https://scan.testnet.tomochain.com/txs/0xd66e858bbde4f95e30886c1d4d9dbaa76ea14d85628db4dcb50d087a8a86de22)
+
 ### Claim TOMO from faucet
 
 Link: https://faucet.testnet.tomochain.com/
 
 ![Faucet](./assets/tomo-faucet.png)
-
-## Smart contract
+ 
+## Smart contract Deploy
 
 ### Source code compiler tool
 - [Remix](http://remix.ethereum.org/)
@@ -102,13 +110,12 @@ Paste the bytecode from Remix of the smart contract
 ![Step3](./assets/tomoscan-verify.png)
 
 #### Step 4. View the verified smart contract
+TNS Registry 
 ![Registry](./assets/tomoscan-verified-registry.png)
+TNS Registrar
 ![Regsitrar](./assets/tomoscan-verified-registrar.png)
+TNS Resolver
 ![Resolver](./assets/tomoscan-verified-resolver.png)
-
-- TNSRegistry.sol, tx: https://scan.testnet.tomochain.com/address/0xdf9e5ce912412ab6af0dd46acff0ffc112bbe36e
-- TNSRegistrar.sol, tx: https://scan.testnet.tomochain.com/address/0xb4cc8deec867c8352ec8f86afc945590629ae260
-- TNSResolver.sol, tx: https://scan.testnet.tomochain.com/address/0x89e77b691c8e3718b808015dbca094d35d7c37cc
 
 ## 🗃 Changelog
 See [CHANGELOG.md](./CHANGELOG.md).
