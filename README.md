@@ -2,6 +2,8 @@
 
 > 📖🔍 Documents of the TomoChain Name Service.
 
+# Overview
+
 ## 💡 What is TomoChain?
 TomoChain is a public blockchain for dApps. The mission is to be a leading force in building the Internet of Value, designing its infrastructure and working to create an alternative financial system which is more secure, transparent, efficient, inclusive and equitable for everyone.
 
@@ -28,7 +30,7 @@ TNS is the TomoChain Name Service, a distributed, open, and extensible naming sy
 - [Smart Contract Deploy](./docs/TUTORIAL.md)
 - [TNS Deploy](./docs/Contract_deploy.md)
 
-## Tech Stack
+## 🗂️ TomoChain Technical Stack
 ![TomoChain Tech Stack](./assets/TomoChain-layer.png)
 
 ## ⚙️ TNS smart contract test coverage
@@ -76,7 +78,7 @@ Shutting down testrpc-sc (pid 83549)
 Done.
 ```
 
-## TNS Deploy
+## 🎯 TNS Deploy
 
 ### TNS Contracts
 
