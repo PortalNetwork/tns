@@ -31,7 +31,37 @@ TNS is the TomoChain Name Service, a distributed, open, and extensible naming sy
 - [TNS Deploy](./docs/Contract_deploy.md)
 
 ## 🗂️ TomoChain Technical Stack
+TomoChain Name Service (TNS) is governed by three smart contract components, registrar, registry, and resolver. The three smart contracts contain the core logic for the TomoChain Name Service implementation, from the ownership managment for a domain, to the global resolving layer that is reposible for connecting different tech stacks and enhances the usability for different infrastructures.
 ![TomoChain Tech Stack](./assets/TomoChain-layer.png)
+
+### State Layer
+State layer is where user’s “state”, or user’s information and behavior, is stored. TomoChain is where these data are stored, and gives users the ability to control their own state.
+![TomoChain State](./assets/Tomo-state.png)
+
+### Computation Layer
+TomoChain uses EVM (Ethereum Virtual Machine) in its computation layer, which is responsible for executing complicated calculations. It is in charge of managing, checking the code of smart contract on TomoChain. When a transaction occurs on TomoChain, the logic designed in EVM will determine its path that cannot be altered. Portal Network will be deploying TNS (Smart Contract Standard) on this layer that consists 3 major components.
+![TomoChain Computation](./assets/Tomo-computation.png)
+
+### Component Layer
+The design of digital assets can have more functions through combing the State Layer and Computation Layer, such as : crypto assets, and identities. Those programmable assets has many more potential usages and sub-economies within. TNS includes three major component:
+
+A registry component stores all the information relative to a domain, and can operate the set of logics to map between the TomoChain domains and its owners.
+A registrar component governs the domain purchase through the customized auction or trading rules.
+A resolver component processes the corresponding resources from wallet address to decentralized application or website on TomoChain.
+![TomoChain Component](./assets/Tomo-component.png)
+
+### Protocol Layer
+On the Protocol Layer, we will be presenting our BNS (Blockchain Name Service) standards that can make the TNS more efficient and applicable. With the state, computation and component layers behind the scene, protocol layer serve as a gateway for users and developers to interact with our TNS standard.
+![TomoChain Protocol](./assets/Tomo-protocol.png)
+
+### User Control Layer
+User control layer is in charge of managing private keys to communicate with the state layer. TNS empowers users to control, set up and manage their digital asset with an easier and readable text, which could be further utilized in the next application layer.
+![TomoChain User](./assets/Tomo-user.png)
+
+### Application Layer
+TNS can be implemented into many other applications on TomoChain, such as wallet that can resolve TNS, dApp that utilize TNS for users identity and many more. We believe that it is an essential components to provide a better environment for both technical and non-technical users.
+![TomoChain Application](./assets/Tomo-app.png)
+
 
 ## ⚙️ TNS smart contract test coverage
 __Continuous updating__
