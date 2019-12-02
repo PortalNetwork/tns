@@ -1,4 +1,4 @@
-pragma solidity ^0.4.18;
+pragma solidity ^0.5.0;
 
 import './TNS.sol';
 
@@ -10,15 +10,15 @@ contract TNSRegistrar {
     bytes32 rootNode;
 
     modifier only_owner(bytes32 subnode) {
-        address currentOwner = tns.owner(keccak256(rootNode, subnode));
-        require(currentOwner == 0 || currentOwner == msg.sender);
+        address currentOwner = tns.owner(keccak256(abi.encodePacked(rootNode, subnode)));
+        require(currentOwner == address(0) || currentOwner == msg.sender);
         _;
     }
 
     /**
      * Constructor.
      */
-    function TNSRegistrar(TNS tnsAddr, bytes32 node) public {
+    constructor (TNS tnsAddr, bytes32 node) public {
         tns = tnsAddr;
         rootNode = node;
     }

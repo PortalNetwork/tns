@@ -23,7 +23,7 @@
   "homepage": "https://github.com/PortalNetwork/tns#readme",
   "dependencies": {
     "eth-ens-namehash": "^2.0.8",
-    "truffle": "^4.1.14",
+    "truffle": "^5.1.0",
     "web3": "^0.20.2"
   },
   "devDependencies": {

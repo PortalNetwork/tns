@@ -1,4 +1,4 @@
-pragma solidity ^0.4.18;
+pragma solidity ^0.5.0;
 
 import './TNS.sol';
 
@@ -48,7 +48,7 @@ contract TNSResolver {
      * Constructor.
      * @param tnsAddr The TNS registrar contract.
      */
-    function TNSResolver(TNS tnsAddr) public {
+    constructor (TNS tnsAddr) public {
         tns = tnsAddr;
     }
 
@@ -60,7 +60,7 @@ contract TNSResolver {
      */
     function setAddr(bytes32 node, address addr) public only_owner(node) {
         records[node].addr = addr;
-        AddrChanged(node, addr);
+        emit AddrChanged(node, addr);
     }
 
     /**
@@ -73,7 +73,7 @@ contract TNSResolver {
      */
     function setContent(bytes32 node, bytes32 hash) public only_owner(node) {
         records[node].content = hash;
-        ContentChanged(node, hash);
+        emit ContentChanged(node, hash);
     }
 
     /**
@@ -83,9 +83,9 @@ contract TNSResolver {
      * @param key The key to set.
      * @param hash The multihash to set.
      */
-    function setMultihash(bytes32 node, string key, bytes hash) public only_owner(node) {
+    function setMultihash(bytes32 node, string memory key, bytes memory hash) public only_owner(node) {
         records[node].multihash[key] = hash;
-        MultihashChanged(node, key, hash);
+        emit MultihashChanged(node, key, hash);
     }
     
     /**
@@ -94,9 +94,9 @@ contract TNSResolver {
      * @param node The node to update.
      * @param name The name to set.
      */
-    function setName(bytes32 node, string name) public only_owner(node) {
+    function setName(bytes32 node, string memory name) public only_owner(node) {
         records[node].name = name;
-        NameChanged(node, name);
+        emit NameChanged(node, name);
     }
 
     /**
@@ -106,9 +106,9 @@ contract TNSResolver {
      * @param key The key to set.
      * @param value The text data value to set.
      */
-    function setText(bytes32 node, string key, string value) public only_owner(node) {
+    function setText(bytes32 node, string memory key, string memory value) public only_owner(node) {
         records[node].text[key] = value;
-        TextChanged(node, key, value);
+        emit TextChanged(node, key, value);
     }
 
     /**
@@ -117,7 +117,7 @@ contract TNSResolver {
      * @param key The text data key to query.
      * @return The associated text data.
      */
-    function text(bytes32 node, string key) public view returns (string) {
+    function text(bytes32 node, string memory key) public view returns (string memory) {
         return records[node].text[key];
     }
 
@@ -126,7 +126,7 @@ contract TNSResolver {
      * @param node The TNS node to query.
      * @return The associated name.
      */
-    function name(bytes32 node) public view returns (string) {
+    function name(bytes32 node) public view returns (string memory) {
         return records[node].name;
     }
 
@@ -147,7 +147,7 @@ contract TNSResolver {
      * @param key The multihash data key to query.
      * @return The associated multihash.
      */
-    function multihash(bytes32 node, string key) public view returns (bytes) {
+    function multihash(bytes32 node, string memory key) public view returns (bytes memory) {
         return records[node].multihash[key];
     }
 
